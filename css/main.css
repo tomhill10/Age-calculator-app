@@ -63,6 +63,15 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
+.day-error {
+  position: relative;
+  left: -750px;
+  top: 110px;
+  max-width: 0;
+  max-height: 0;
+  white-space: nowrap;
+}
+
 .button-1-container {
   position: relative;
   right: -120px;
