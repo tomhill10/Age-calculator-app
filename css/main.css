@@ -1,0 +1,85 @@
+.app-container {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  width: 840px;
+  height: 651px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 0 0 300px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background-card);
+}
+
+.date-entry {
+  display: flex;
+  justify-content: flex-start;
+  height: 15%;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--color-background-card);
+}
+
+.date-entry-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 22%;
+  gap: 10%;
+}
+
+.date-entry-wrapper > input {
+  height: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  border: 2px solid gray;
+}
+
+.date-entry-wrapper > label {
+  height: 20%;
+  color: grey;
+  font-weight: 600;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.button-1-container {
+  position: relative;
+  right: -120px;
+  top: 70px;
+}
+
+.button-1:hover {
+  background-color: var(--color-button-default);
+  cursor: pointer;
+}
+
+.button-1 {
+  background-color: black;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
