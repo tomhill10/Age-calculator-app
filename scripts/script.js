@@ -1,11 +1,18 @@
-//let dday = document.getElementById("day");
-//let mmonth = document.getElementById("month");
-//let yyear = document.getElementById("year");
+let button = document.getElementById("button-click");
 
-//function calculateAge() {
-//let dayborn = document.getElementById("day").value;
-//console.log(dayborn);
-//}
+button.addEventListener("click", function () {
+  console.log("button clicked!");
+});
+
+/* CODE THAT DOESNT WORK MAYBE COME BACK TO
+let dday = document.getElementById("day");
+let mmonth = document.getElementById("month");
+let yyear = document.getElementById("year");
+
+function calculateAge() {
+let dayborn = document.getElementById("day").value;
+console.log(dayborn);
+}
 
 function validateDate() {
   // Split the date into day, month, and year values
@@ -53,3 +60,6 @@ button.addEventListener("click", function () {
     }
   }
 });
+
+
+*/
