@@ -1,9 +1,9 @@
-/*let button = document.getElementById("button-click");
-
+/*
 button.addEventListener("click", function () {
   console.log("button clicked!");
 });
 */ //To Test eventListener
+let button = document.getElementById("button-click");
 
 function validateDate() {
   let day = document.getElementById("day").value;
