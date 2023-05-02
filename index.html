@@ -26,7 +26,6 @@
             id="day"
             placeholder="DD"
             max="31"
-            value="12"
           />
         </div>
         <div class="date-entry-wrapper">
@@ -37,7 +36,6 @@
             id="month"
             placeholder="MM"
             max="12"
-            value="45"
           />
         </div>
         <div class="date-entry-wrapper">
@@ -48,7 +46,6 @@
             id="year"
             placeholder="YYYY"
             max="2024"
-            value="2023"
           />
         </div>
 
@@ -62,6 +59,22 @@
           </button>
         </div>
         <p class="day-error">Must be a valid date!</p>
+      </div>
+      <div class="output-container">
+        <div class="output-row-wrapper">
+          <p class="output-years-data output-data" id="p-years">- -</p>
+          <p class="out-years-string">&nbspyears</p>
+        </div>
+
+        <div class="output-row-wrapper">
+          <p class="output-month-data output-data" id="p-months">- -</p>
+          <p class="out-month-string">&nbspmonths</p>
+        </div>
+
+        <div class="output-row-wrapper">
+          <p class="output-days-data output-data" id="p-days">- -</p>
+          <p class="out-days-string">&nbspdays</p>
+        </div>
       </div>
     </div>
     <script src="./scripts/script.js"></script>

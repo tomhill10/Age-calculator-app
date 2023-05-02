@@ -18,3 +18,5 @@ had a look at the date or new date() constructor. Might be able to parse in the 
 Stuff I learned:
 
 - Put Javascript <script></script> at the bottom of the page!!!!
+- Managed to get an event listender to work. Have to make sure that I am not calling a function inside of itself. i.e. Don't write the function out in full inside of the event listener!!! DUR!
+- I think I have managed to make the month check if the correct amount of days in said month. With the .getDate() object. or new Date. Read an article and here we are.
