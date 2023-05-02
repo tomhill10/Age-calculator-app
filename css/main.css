@@ -66,8 +66,8 @@ input::-webkit-inner-spin-button {
 .day-error {
   display: none;
   position: relative;
-  left: -750px;
-  top: 110px;
+  left: -420px;
+  top: -150px;
   max-width: 0;
   max-height: 0;
   white-space: nowrap;
@@ -77,8 +77,8 @@ input::-webkit-inner-spin-button {
 
 .button-1-container {
   position: relative;
-  right: -110px;
-  top: 85px;
+  right: -350px;
+  top: -60px;
 }
 
 .button-1:hover {
@@ -98,13 +98,15 @@ input::-webkit-inner-spin-button {
 
 /*---------------------- OUTPUT ----------------------*/
 .output-container {
+  position: relative;
+  top: -20%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   height: 80%;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .output-row-wrapper {
@@ -115,7 +117,7 @@ input::-webkit-inner-spin-button {
 }
 
 .output-row-wrapper > p {
-  font-size: 150px;
+  font-size: 145px;
   font-weight: 700;
   font-style: italic;
 }
@@ -123,4 +125,89 @@ input::-webkit-inner-spin-button {
 .output-row-wrapper > p:first-child {
   color: var(--color-button-default);
   font-weight: 800;
+}
+
+/*---------------------- MEDIA QUERY ----------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .app-container {
+    width: 70%;
+    height: 60%;
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .date-entry {
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    gap: 2%;
+    margin-left: 15px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid var(--color-background-card);
+  }
+
+  .date-entry-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 32%;
+    gap: 10%;
+  }
+
+  .date-entry-wrapper > input {
+    height: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    border: 2px solid grey;
+  }
+
+  .date-entry-wrapper > label {
+    height: 20%;
+    color: grey;
+    font-weight: 600;
+  }
+
+  .button-1-container {
+    position: relative;
+    right: -0;
+    top: -30px;
+  }
+
+  .button-1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .output-container {
+    width: 100%;
+    height: 80%;
+    left: 9px;
+    margin-top: 40%;
+  }
+
+  .output-row-wrapper > p {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .output-row-wrapper > p:first-child {
+    color: var(--color-button-default);
+    font-weight: 800;
+  }
+
+  .day-error {
+    display: none;
+    position: relative;
+    left: -130px;
+    top: -120px;
+    font-size: 20px;
+    color: red;
+  }
 }

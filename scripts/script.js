@@ -26,6 +26,34 @@ function validateDate() {
   return true;
 }
 
+function getDateDifference(day, month, year) {
+  let inputDate = new Date(`${year}-${month}-${day}`);
+  let currentDate = new Date();
+
+  let years = currentDate.getFullYear() - inputDate.getFullYear();
+  let months = currentDate.getMonth() - inputDate.getMonth();
+  let days = currentDate.getDate() - inputDate.getDate();
+
+  if (days < 0) {
+    months -= 1;
+    days += new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      0
+    ).getDate();
+  }
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+
+  return {
+    years: years,
+    months: months,
+    days: days,
+  };
+}
+
 button.addEventListener("click", function () {
   const inputBorder = document.getElementsByTagName("input");
   const inputWarning = document.getElementsByClassName("day-error");
@@ -76,31 +104,3 @@ button.addEventListener("click", function () {
     inputDataYear.appendChild(outputDataYear);
   }
 });
-
-function getDateDifference(day, month, year) {
-  let inputDate = new Date(`${year}-${month}-${day}`);
-  let currentDate = new Date();
-
-  let years = currentDate.getFullYear() - inputDate.getFullYear();
-  let months = currentDate.getMonth() - inputDate.getMonth();
-  let days = currentDate.getDate() - inputDate.getDate();
-
-  if (days < 0) {
-    months -= 1;
-    days += new Date(
-      currentDate.getFullYear(),
-      currentDate.getMonth(),
-      0
-    ).getDate();
-  }
-  if (months < 0) {
-    years -= 1;
-    months += 12;
-  }
-
-  return {
-    years: years,
-    months: months,
-    days: days,
-  };
-}
