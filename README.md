@@ -20,3 +20,5 @@ Stuff I learned:
 - Put Javascript <script></script> at the bottom of the page!!!!
 - Managed to get an event listender to work. Have to make sure that I am not calling a function inside of itself. i.e. Don't write the function out in full inside of the event listener!!! DUR!
 - I think I have managed to make the month check if the correct amount of days in said month. With the .getDate() object. or new Date. Read an article and here we are.
+- tried calculating the difference in years/months/days without using JS methods. It didn't go well. Using methods seemed to work better. Still wrapping head around the date object.
+- My button.addEventListener is looking huge. Maybe there is a way to split this up?

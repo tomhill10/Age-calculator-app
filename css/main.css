@@ -191,7 +191,7 @@ input::-webkit-inner-spin-button {
   }
 
   .output-row-wrapper > p {
-    font-size: 60px;
+    font-size: 11vw;
     margin-bottom: 20px;
     font-weight: 700;
     font-style: italic;
